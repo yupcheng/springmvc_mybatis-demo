@@ -25,7 +25,6 @@ ssm测试
  2.mvc必要配置
   <mvc:annotation-driven/>
     <!-- 导入属性配置文件 -->
-    <context:property-placeholder location="classpath:jdbc.properties" />
     <bean id="handlerMapping" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" />
     <bean id="handlerAdapter" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
         <property name="messageConverters">
